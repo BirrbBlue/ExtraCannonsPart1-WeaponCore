@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ResearchGroups>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="17" />
+            <Members>
+		        <BlockId Type="MyObjectBuilder_SmallGatlingGun" Subtype="HeavyAutoCannon" />
+		        <BlockId Type="MyObjectBuilder_SmallGatlingGun" Subtype="RapidAutoCannon" />
+                <BlockId Type="MyObjectBuilder_SmallGatlingGun" Subtype="ChainCannon" />
+                <BlockId Type="MyObjectBuilder_SmallMissileLauncherReload" Subtype="AutoAssaultCannon" />
+                <BlockId Type="MyObjectBuilder_SmallMissileLauncherReload" Subtype="HyperVelocityAssaultCannon" />
+                <BlockId Type="MyObjectBuilder_SmallMissileLauncherReload" Subtype="RepeaterCannon" />
+            </Members>
+        </ResearchGroup>
+    </ResearchGroups>
+</Definitions>

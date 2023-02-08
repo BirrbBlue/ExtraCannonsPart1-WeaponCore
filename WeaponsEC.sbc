@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Weapons>
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>AutoAssaultCannonWep</SubtypeId>
+            </Id>
+            <ProjectileAmmoData />
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="Energy" />
+            </AmmoMagazines>
+        </Weapon>
+
+	    <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>HeavyAutocannonWep</SubtypeId>
+            </Id>
+            <ProjectileAmmoData />
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="Energy" />
+            </AmmoMagazines>
+        </Weapon>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>HyperVelCannonWep</SubtypeId>
+            </Id>
+            <ProjectileAmmoData />
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="Energy" />
+            </AmmoMagazines>
+        </Weapon>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>RapidAutoCannonWep</SubtypeId>
+            </Id>
+            <ProjectileAmmoData />
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="Energy" />
+            </AmmoMagazines>
+        </Weapon>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>RepeaterCannonWep</SubtypeId>
+            </Id>
+            <ProjectileAmmoData />
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="Energy" />
+            </AmmoMagazines>
+        </Weapon>
+
+                <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>ChainCannonWep</SubtypeId>
+            </Id>
+            <ProjectileAmmoData />
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="Energy" />
+            </AmmoMagazines>
+        </Weapon>
+
+
+    </Weapons>
+</Definitions>

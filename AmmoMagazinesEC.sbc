@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <AmmoMagazines>
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>AutoAssaultCannonAmmo</SubtypeId>
+            </Id>
+            <DisplayName>Attack Cannon Ammo</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\AttackCannonShell.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>60</Mass>
+            <Volume>20</Volume>
+            <Model>Models\Weapons\AttackShell.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="AttackCannonShell" />
+
+            <MinimumOfferAmount>100</MinimumOfferAmount>
+            <MaximumOfferAmount>1000</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+	<AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>HeavyAutocannonClip</SubtypeId>
+            </Id>
+            <DisplayName>Heavy Auto Cannon Clip</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\HeavyAutoCannonClip.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>40</Mass>
+            <Volume>24</Volume>
+            <Model>Models\Weapons\HeavyAutoCannonClip.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>12</Capacity>
+            <AmmoDefinitionId Subtype="HeavyAutocannonShell" />
+
+            <MinimumOfferAmount>30</MinimumOfferAmount>
+            <MaximumOfferAmount>300</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>1000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+	</AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>HyperVelCannonAmmo</SubtypeId>
+            </Id>
+            <DisplayName>Hyper Velocity Cannon Ammo</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\Sabot.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>60</Mass>
+            <Volume>25</Volume>
+            <Model>Models\Weapons\HyperVelocityCased.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="HyperVelocityShell" />
+
+            <MinimumOfferAmount>100</MinimumOfferAmount>
+            <MaximumOfferAmount>1000</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>RepeaterCannonAmmoClip</SubtypeId>
+            </Id>
+            <DisplayName>Bofors Clip</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\RepeaterCannonClip.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>60</Mass>
+            <Volume>20</Volume>
+            <Model>Models\Weapons\RepeaterCannonClip.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="RepeaterCannonShell" />
+
+            <MinimumOfferAmount>100</MinimumOfferAmount>
+            <MaximumOfferAmount>1000</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+    </AmmoMagazines>
+</Definitions>

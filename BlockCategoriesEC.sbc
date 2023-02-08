@@ -1,0 +1,44 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>Extra Cannons</DisplayName>
+      <Name>Extra Cannons</Name>
+      <ItemIds>
+        <string>AutoAssaultCannon</string>
+        <string>HyperVelocityAssaultCannon</string>
+        <string>HeavyAutoCannon</string>
+        <string>RapidAutoCannon</string>
+        <string>RepeaterCannon</string>
+        <string>ChainCannon</string>
+      </ItemIds>
+    </Category>
+
+
+  <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>DisplayName_Category_ShipWeapons</DisplayName>
+	    <Name>ShipWeapons</Name>
+            <SearchBlocks>true</SearchBlocks>
+            <IsShipCategory>true</IsShipCategory>
+            <IsBlockCategory>true</IsBlockCategory>
+            <IsToolCategory>true</IsToolCategory>
+            <ItemIds>
+		          <string>SmallMissileLauncherReload/AutoAssaultCannon</string>
+		          <string>SmallMissileLauncherReload/HyperVelocityAssaultCannon</string>
+		          <string>SmallGatlingGun/HeavyAutoCannon</string>
+		          <string>SmallGatlingGun/RapidAutoCannon</string>
+              <string>SmallMissileLauncherReload/RepeaterCannon</string>
+              <string>SmallGatlingGun/ChainCannon</string>
+            </ItemIds>
+        </Category>
+  </CategoryClasses>
+</Definitions>

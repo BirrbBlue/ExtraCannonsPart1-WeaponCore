@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  	<BlueprintClassEntries>
+
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncherReload/AutoAssaultCannon" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="AutoAssaultCannonAmmo" />
+        <Entry Class="Ammo" BlueprintSubtypeId="AutoAssaultCannonAmmo" />
+
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="SmallGatlingGun/HeavyAutoCannon" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="HeavyAutocannonClip" />
+        <Entry Class="Ammo" BlueprintSubtypeId="HeavyAutocannonClip" />
+
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncherReload/HyperVelocityAssaultCannon" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="HyperVelCannonAmmo" />
+        <Entry Class="Ammo" BlueprintSubtypeId="HyperVelCannonAmmo" />
+	
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="SmallGatlingGun/RapidAutoCannon" />
+
+		<Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncherReload/RepeaterCannon" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="RepeaterCannonAmmoClip" />
+        <Entry Class="Ammo" BlueprintSubtypeId="RepeaterCannonAmmoClip" />
+
+    <Entry Class="SmallBlocks" BlueprintSubtypeId= "SmallGatlingGun/ChainCannon" />
+
+	</BlueprintClassEntries>
+
+</Definitions>

@@ -1,0 +1,366 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncherReload</TypeId>
+				<SubtypeId>AutoAssaultCannon</SubtypeId>
+			</Id>
+			<DisplayName>Attack Cannon</DisplayName>
+			<Description>Developed from the Assault Cannon, the Attack Cannon uses new slightly smaller calibre ammo but offers increased rate of fire, usually used as a flak Range 1400</Description>
+			<Icon>Textures\GUI\Icons\AutoAssaultCannon.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="9"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\AutoAssaultCannon.mwm</Model>
+            		<Components>
+                		<Component Subtype="SteelPlate" Count="10" />
+                		<Component Subtype="Construction" Count="10" />
+                		<Component Subtype="MetalGrid" Count="5" />
+                		<Component Subtype="LargeTube" Count="10" />
+                		<Component Subtype="Computer" Count="1" />
+                		<Component Subtype="SteelPlate" Count="15" />
+						<Component Subtype="Motor" Count="5" />
+            		</Components>
+            		<CriticalComponent Subtype="Computer" Index="0" />
+            		<MountPoints>
+                		<MountPoint Side="Left" StartX="6" StartY="0" EndX="9" EndY="1" />
+                		<MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="3" />
+                		<MountPoint Side="Bottom" StartX="0" StartY="6" EndX="1" EndY="9" />
+                		<MountPoint Side="Right" StartX="0" StartY="0" EndX="3" EndY="1" />
+                		<MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+            		</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\AutoAssaultCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\AutoAssaultCannon_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>AutoAssaultCannon</BlockPairName>
+			<Center x="0" y="0" z="7" />
+            		<BuildTimeSeconds>26</BuildTimeSeconds>
+            		<EdgeType>Light</EdgeType>
+            		<WeaponDefinitionId Subtype="AutoAssaultCannonWep"/>
+            		<InventoryMaxVolume>0.1</InventoryMaxVolume>
+            		<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            		<DamagedSound>ParticleWeapExpl</DamagedSound>
+            		<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            		<DestroySound>WepSmallWarheadExpl</DestroySound>
+            		<PCU>80</PCU>
+           		 <TargetingGroups>
+                		<string>Weapons</string>
+            		</TargetingGroups>
+            		<DestroyEffectOffset>
+                		<X>0</X>
+               			<Y>0</Y>
+                		<Z>1.5</Z>
+           		</DestroyEffectOffset>
+            		<DamageEffectOffset>
+                		<X>0</X>
+                		<Y>0</Y>
+                		<Z>1.5</Z>
+           		 </DamageEffectOffset>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallGatlingGun</TypeId>
+				<SubtypeId>HeavyAutoCannon</SubtypeId>
+			</Id>
+			<DisplayName>Heavy Auto Cannon</DisplayName>
+			<Description>The Heavy Auto Cannon has got bigger punch but slightly slower velocity and slightly less range. It shouldn't be your main weapon for custom turrets but more like a niche if you manage to get close Range 700</Description>
+			<Icon>Textures\GUI\Icons\HeavyAutoCannon.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\HeavyAutoCannon.mwm</Model>
+            		<Components>
+                		<Component Subtype="SteelPlate" Count="2" />
+                		<Component Subtype="Construction" Count="2" />
+                		<Component Subtype="MetalGrid" Count="2" />
+                		<Component Subtype="SmallTube" Count="2" />
+                		<Component Subtype="Motor" Count="1" />
+                		<Component Subtype="Computer" Count="1" />
+                		<Component Subtype="SteelPlate" Count="4" />
+            		</Components>
+           		 <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="4.03" StartY="0.00" EndX="5.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="0.97" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.97"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="4.03" EndX="1.00" EndY="5.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\HeavyAutoCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\HeavyAutoCannon_BS2.mwm"/>
+			</BuildProgressModels>
+            		<MirroringY>Z</MirroringY>
+            		<MirroringZ>Y</MirroringZ>
+			<BlockPairName>HeavyAutoCannon</BlockPairName>
+           		<Center x="0" y="0" z="4" />
+			<BuildTimeSeconds>14</BuildTimeSeconds>
+			<EdgeType>Light</EdgeType>
+			<WeaponDefinitionId Subtype="HeavyAutocannonWep" />
+            		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+            		<InventoryMaxVolume>0.072</InventoryMaxVolume>
+            		<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            		<DamagedSound>ParticleWeapExpl</DamagedSound>
+            		<DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            		<DestroySound>WepSmallWarheadExpl</DestroySound>
+            		<PCU>80</PCU>
+            		<TargetingGroups>
+                		<string>Weapons</string>
+            		</TargetingGroups>
+            		<DestroyEffectOffset>
+                		<X>0</X>
+                		<Y>0</Y>
+                		<Z>1</Z>
+            		</DestroyEffectOffset>
+            		<DamageEffectOffset>
+                		<X>0</X>
+                		<Y>0</Y>
+                		<Z>1</Z>
+            		</DamageEffectOffset>
+        	</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncherReload</TypeId>
+				<SubtypeId>HyperVelocityAssaultCannon</SubtypeId>
+			</Id>
+			<DisplayName>Hyper Velocity Assault Cannon</DisplayName>
+			<Description>A really high velocity Cannon meant to be mounted on various types of vehicles and ships, in some way it might be a cheaper alternative to rail guns, it used to snipe targets from afar Range 2000</Description>
+			<Icon>Textures\GUI\Icons\HyperVelocityAssaultCannon.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="15"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\HyperVelocityAssaultCannon.mwm</Model>
+            		<Components>
+                		<Component Subtype="SteelPlate" Count="5" />
+                		<Component Subtype="Construction" Count="15" />
+                		<Component Subtype="MetalGrid" Count="15" />
+                		<Component Subtype="LargeTube" Count="25" />
+                		<Component Subtype="Computer" Count="1" />
+                		<Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Motor" Count="1" />
+            		</Components>
+            		<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="12.33" StartY="0.00" EndX="15.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.67" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.02" EndX="1.00" EndY="2.69"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="12.31" EndX="1.00" EndY="14.97"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\HyperVelocityAssaultCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\HyperVelocityAssaultCannon_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>HyperVelocityAssaultCannon</BlockPairName>
+			<Center x="0" y="0" z="12" />
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+            		<EdgeType>Light</EdgeType>
+            		<WeaponDefinitionId Subtype="HyperVelCannonWep"/>
+            		<InventoryMaxVolume>0.09</InventoryMaxVolume>
+            		<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            		<DamagedSound>ParticleWeapExpl</DamagedSound>
+            		<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            		<DestroySound>WepSmallWarheadExpl</DestroySound>
+            		<PCU>80</PCU>
+           		 <TargetingGroups>
+                		<string>Weapons</string>
+            		</TargetingGroups>
+            		<DestroyEffectOffset>
+                		<X>0</X>
+               			<Y>0</Y>
+                		<Z>1.5</Z>
+           		</DestroyEffectOffset>
+            		<DamageEffectOffset>
+                		<X>0</X>
+                		<Y>0</Y>
+                		<Z>1.5</Z>
+           		 </DamageEffectOffset>
+		</Definition>
+
+        <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+            <Id>
+				<TypeId>SmallGatlingGun</TypeId>
+				<SubtypeId>RapidAutoCannon</SubtypeId>
+			</Id>
+			<DisplayName>Light Auto Cannon</DisplayName>
+			<Description>An Auto Cannon that uses the same calibre from the Gatling Gun, cheaper and easier to make less RPM. range 800m</Description>
+			<Icon>Textures\GUI\Icons\Cubes\RapidAutoCannon.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\RapidAutoCannon.mwm</Model>
+            		<Components>
+                		<Component Subtype="SteelPlate" Count="1" />
+                		<Component Subtype="Construction" Count="1" />
+                		<Component Subtype="MetalGrid" Count="2" />
+                		<Component Subtype="SmallTube" Count="2" />
+                		<Component Subtype="Computer" Count="1" />
+                		<Component Subtype="SteelPlate" Count="3" />
+            		</Components>
+                		<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="3.99" StartY="0.00" EndX="5.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.01" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.01"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="3.99" EndX="1.00" EndY="5.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\RapidAutoCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\RapidAutoCannon_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>RapidAutoCannon</BlockPairName>
+            <Center x="0" y="0" z="4" />
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>13</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <WeaponDefinitionId Subtype="RapidAutoCannonWep" />
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+            <InventoryMaxVolume>0.080</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>80</PCU>
+            <InventoryFillFactorMin>.6</InventoryFillFactorMin>
+            <TargetingGroups>
+                <string>Weapons</string>
+            </TargetingGroups>
+        </Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallMissileLauncherReload</TypeId>
+				<SubtypeId>RepeaterCannon</SubtypeId>
+			</Id>
+			<DisplayName>Bofors</DisplayName>
+			<Description>A Light Flak Cannon that shoots Flak ammo up to a range of 1000m, does slightly less damage than Attack Cannon but more damage than Auto Cannon</Description>
+			<Icon>Textures\GUI\Icons\Cubes\RepeaterCannon.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="11"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\RepeaterCannon.mwm</Model>
+            <Components>
+                	<Component Subtype="SteelPlate" Count="7" />
+                	<Component Subtype="Construction" Count="7" />
+                	<Component Subtype="MetalGrid" Count="5" />
+                	<Component Subtype="LargeTube" Count="7" />
+                	<Component Subtype="Computer" Count="1" />
+                	<Component Subtype="SteelPlate" Count="15" />
+					<Component Subtype="Motor" Count="5" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="8.02" StartY="0.00" EndX="11.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.01" StartY="0.00" EndX="2.98" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.03" EndX="1.00" EndY="3.01"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="7.99" EndX="1.00" EndY="10.97"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\RepeaterCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\RepeaterCannon_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>RepeaterCannon</BlockPairName>
+			<Center x="0" y="0" z="7" />
+            		<BuildTimeSeconds>26</BuildTimeSeconds>
+            		<EdgeType>Light</EdgeType>
+            		<WeaponDefinitionId Subtype="RepeaterCannonWep"/>
+            		<InventoryMaxVolume>0.1</InventoryMaxVolume>
+            		<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            		<DamagedSound>ParticleWeapExpl</DamagedSound>
+            		<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            		<DestroySound>WepSmallWarheadExpl</DestroySound>
+            		<PCU>80</PCU>
+           		 <TargetingGroups>
+                		<string>Weapons</string>
+            		</TargetingGroups>
+            		<DestroyEffectOffset>
+                		<X>0</X>
+               			<Y>0</Y>
+                		<Z>1.5</Z>
+           		</DestroyEffectOffset>
+            		<DamageEffectOffset>
+                		<X>0</X>
+                		<Y>0</Y>
+                		<Z>1.5</Z>
+           		 </DamageEffectOffset>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+			<Id>
+				<TypeId>SmallGatlingGun</TypeId>
+				<SubtypeId>ChainCannon</SubtypeId>
+			</Id>
+			<DisplayName>Chain Cannon</DisplayName>
+			<Description>A very powerfull weapon developed from the Auto Cannon and it uses the same clip from it ! it has got high rate of fire and a range of 800m but it is expensive to make and takes a while to reload</Description>
+			<Icon>Textures\GUI\Icons\ChainCannon.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="8"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\ChainCannon.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="5" />
+                <Component Subtype="Construction" Count="15" />
+                <Component Subtype="Superconductor" Count="10" />
+                <Component Subtype="LargeTube" Count="1" />
+                <Component Subtype="SmallTube" Count="2" />
+                <Component Subtype="PowerCell" Count="5"/>
+                <Component Subtype="Computer" Count="10" />
+                <Component Subtype="SteelPlate" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="5.02" StartY="0.00" EndX="7.99" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.01" StartY="0.00" EndX="2.98" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.03" EndX="1.00" EndY="3.01"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="4.99" EndX="1.00" EndY="7.97"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\ChainCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\ChainCannon_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>ChainCannon</BlockPairName>
+			<MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+		    <Center x="0" y="0" z="4" />
+            <BuildTimeSeconds>14</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <WeaponDefinitionId Subtype="ChainCannonWep" />
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+            <InventoryMaxVolume>0.072</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>80</PCU>
+            <TargetingGroups>
+                <string>Weapons</string>
+            </TargetingGroups>
+            <DestroyEffectOffset>
+                <X>0</X>
+                <Y>0</Y>
+                <Z>1</Z>
+            </DestroyEffectOffset>
+            <DamageEffectOffset>
+                <X>0</X>
+                <Y>0</Y>
+                <Z>1</Z>
+            </DamageEffectOffset>
+        </Definition>
+
+
+	</CubeBlocks>
+</Definitions>

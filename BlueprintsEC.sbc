@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Blueprints>
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>AutoAssaultCannonAmmo</SubtypeId>
+            </Id>
+            <DisplayName>Attack Cannon Ammo</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\AttackCannonShell.dds</Icon>
+            <Prerequisites>
+                <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
+                <Item Amount="4" TypeId="Ingot" SubtypeId="Nickel" />
+                <Item Amount="1.2" TypeId="Ingot" SubtypeId="Magnesium" />
+            </Prerequisites>
+            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AutoAssaultCannonAmmo" />
+            <BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+        </Blueprint>
+
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>HeavyAutocannonClip</SubtypeId>
+            </Id>
+            <DisplayName>Heavy Auto Cannon Clip</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\HeavyAutoCannonClip.dds</Icon>
+            <Prerequisites>
+                <Item Amount="35" TypeId="Ingot" SubtypeId="Iron" />
+                <Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
+                <Item Amount="7" TypeId="Ingot" SubtypeId="Magnesium" />
+            </Prerequisites>
+            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="HeavyAutocannonClip" />
+            <BaseProductionTimeInSeconds>6</BaseProductionTimeInSeconds>
+        </Blueprint>
+
+        <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>HyperVelCannonAmmo</SubtypeId>
+            </Id>
+            <DisplayName>Hyper Velocity Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\Sabot.dds</Icon>
+            <Prerequisites>
+                <Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
+                <Item Amount="1" TypeId="Ingot" SubtypeId="Nickel" />
+                <Item Amount="8" TypeId="Ingot" SubtypeId="Silicon" />
+            </Prerequisites>
+            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="HyperVelCannonAmmo" />
+            <BaseProductionTimeInSeconds>8</BaseProductionTimeInSeconds>
+        </Blueprint>
+
+                <Blueprint>
+            <Id>
+                <TypeId>BlueprintDefinition</TypeId>
+                <SubtypeId>RepeaterCannonAmmoClip</SubtypeId>
+            </Id>
+            <DisplayName>Hyper Velocity Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\RepeaterCannonClip.dds</Icon>
+            <Prerequisites>
+                <Item Amount="60" TypeId="Ingot" SubtypeId="Iron" />
+                <Item Amount="25" TypeId="Ingot" SubtypeId="Nickel" />
+                <Item Amount="25" TypeId="Ingot" SubtypeId="Magnesium" />
+            </Prerequisites>
+            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="RepeaterCannonAmmoClip" />
+            <BaseProductionTimeInSeconds>8</BaseProductionTimeInSeconds>
+        </Blueprint>
+
+    </Blueprints>
+</Definitions>

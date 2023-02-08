@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlockVariantGroups>
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ExtraCannons" />
+            <Icon>Textures\GUI\Icons\Cubes\HeavyAutoCannon.dds</Icon>
+            <DisplayName>Extra Cannons</DisplayName>
+            <Description>Extra Cannons that go well with Vanilla</Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_SmallGatlingGun" Subtype="HeavyAutoCannon" />
+                <Block Type="MyObjectBuilder_SmallGatlingGun" Subtype="RapidAutoCannon" />
+                <Block Type="MyObjectBuilder_SmallMissileLauncherReload" Subtype="AutoAssaultCannon" />
+                <Block Type="MyObjectBuilder_SmallMissileLauncherReload" Subtype="HyperVelocityAssaultCannon" />
+                <Block Type="MyObjectBuilder_SmallMissileLauncherReload" Subtype="RepeaterCannon" />
+                <Block Type="MyObjectBuilder_SmallGatlingGun" Subtype="ChainCannon" />
+            </Blocks>
+        </BlockVariantGroup>
+    </BlockVariantGroups>
+</Definitions>
